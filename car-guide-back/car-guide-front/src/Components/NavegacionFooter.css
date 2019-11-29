@@ -1,0 +1,13 @@
+.footer{
+  background-color: #272E36;
+  color: white;
+}
+
+.info{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 50px;
+  align-items: baseline;
+}
+
+

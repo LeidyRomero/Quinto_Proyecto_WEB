@@ -1,0 +1,69 @@
+.services {
+  background-color: #272e36;
+  position: relative;
+}
+
+#wrap-services-title {
+  background: rgba(38, 38, 38, 0.7);
+  border-radius: 8px;
+  position: absolute;
+  text-align: center;
+  top: 12%;
+  margin-left: 60px;
+  padding: 10px 35px;
+}
+
+.services-main-title{
+  font-weight: 800;
+  color: white;
+}
+
+.service-title {
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.services-card {
+  background: #455160;
+  display: flex;
+  margin: 20px 20px 15px 30px;
+  transition:0.4s;
+}
+
+.services-card:hover {
+  background-color: #cb2e2d;
+  padding: 10px
+}
+
+.services-card:hover .service-price {
+  color: #cb2e2d;
+  background-color: white;
+}
+
+.service-img {
+  height: 100%;
+  width: 250px;
+  object-fit: cover;
+}
+
+#service-description {
+  font-size: 0.9em;
+  color: white;
+  height: 60px;
+  overflow: hidden;
+}
+
+.service-text {
+  padding: 20px 15px 10px 15px;
+}
+
+.service-price {
+  background-color: #cb2e2d;
+  color: white;
+  font-weight: 700;
+  align-self: center;
+  padding: 10px 10px;
+  margin-right: 20px;
+  width: 150px;
+}

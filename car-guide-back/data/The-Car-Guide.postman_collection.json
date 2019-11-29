@@ -1,0 +1,643 @@
+{
+	"info": {
+		"_postman_id": "0d8259e4-30e1-44f1-afac-3e724e5b865f",
+		"name": "The-Car-Guide",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "CARS - POST many",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"year\": 1960,\r\n    \"km\": 90000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"07/04/2012\",\r\n    \"name\": \"BMW 507 2\",\r\n    \"license\": \"347-FNK\",\r\n    \"price\": 165000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 3200,\r\n    \"cil_capacity\": 150,\r\n    \"model\": \"BMW 507\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.pinimg.com/736x/62/bc/0e/62bc0e9b24a7ae38c581760b2ed9d9a4--bmw-roadster-antique-cars.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1972,\r\n    \"km\": 105000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"06/30/2011\",\r\n    \"name\": \"BMW 507 2\",\r\n    \"license\": \"440-HYE\",\r\n    \"price\": 160000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 3200,\r\n    \"cil_capacity\": 150,\r\n    \"model\": \"BMW 507\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.pinimg.com/736x/a5/7c/d0/a57cd0f4f1e8e06600eeafd94df6952d--bmw-classic-bmw-cars.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2000,\r\n    \"km\": 20000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"02/17/2015\",\r\n    \"name\": \"BMW Z8 1\",\r\n    \"license\": \"048-UKX\",\r\n    \"price\": 280000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 4900,\r\n    \"cil_capacity\": 400,\r\n    \"model\": \"BMW Z8\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://www.classicdriver.com/sites/default/files/styles/two_third_slider/public/cars_images/feed_499796/1ac4a62afa629b31a6cda86f8ecae8810e3d7e72.jpg?itok=7o2i3cRu\"\r\n  },\r\n  {\r\n    \"year\": 2002,\r\n    \"km\": 18000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"01/15/2015\",\r\n    \"name\": \"BMW Z8 2\",\r\n    \"license\": \"696-NXU\",\r\n    \"price\": 286000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 4900,\r\n    \"cil_capacity\": 400,\r\n    \"model\": \"BMW Z8\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://cloud10.todocoleccion.online/coches-a-escala/tc/2015/09/17/00/51323358_27661983.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2004,\r\n    \"km\": 19000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"10/05/2017\",\r\n    \"name\": \"BMW Z8 3\",\r\n    \"license\": \"772-CWX\",\r\n    \"price\": 284000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 4900,\r\n    \"cil_capacity\": 400,\r\n    \"model\": \"BMW Z8\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://s13252.pcdn.co/wp-content/uploads/2018/01/5a69148c6d14e_15161338087dff9f98764daZ89-940x541.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 8000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"02/05/2013\",\r\n    \"name\": \"BMW M5 1\",\r\n    \"license\": \"638-EVN\",\r\n    \"price\": 368000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 4400,\r\n    \"cil_capacity\": 600,\r\n    \"model\": \"BMW M5\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"http://www.caranddriver.es/themes/ee/site/CD/asset/img/contenidos/10607/bmw-m5-2018__pinned.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2018,\r\n    \"km\": 5000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Vinotinto\",\r\n    \"enter_date\": \"06/23/2011\",\r\n    \"name\": \"BMW M5 2\",\r\n    \"license\": \"387-CPS\",\r\n    \"price\": 370000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 4400,\r\n    \"cil_capacity\": 600,\r\n    \"model\": \"BMW M5\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://i.gaw.to/photos/3/0/4/304864_2018_BMW_5_Series.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2016,\r\n    \"km\": 1000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"01/21/2015\",\r\n    \"name\": \"BMW M5 3\",\r\n    \"license\": \"285-URW\",\r\n    \"price\": 378000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 4400,\r\n    \"cil_capacity\": 600,\r\n    \"model\": \"BMW M5\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://icdn-3.motor1.com/images/mgl/BnpBR/s4/2018-bmw-m5-with-m-performance-parts.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1972,\r\n    \"km\": 900000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Verde\",\r\n    \"enter_date\": \"12/14/2014\",\r\n    \"name\": \"Audi 80B1 1\",\r\n    \"license\": \"626-HMM\",\r\n    \"price\": 125000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 1500,\r\n    \"cil_capacity\": 74,\r\n    \"model\": \"Audi 80 B1\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.pinimg.com/originals/39/0a/a9/390aa9b1f35862d15902f57a65f46966.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1972,\r\n    \"km\": 1005000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"05/02/2012\",\r\n    \"name\": \"Audi 80B1 2\",\r\n    \"license\": \"591-PKE\",\r\n    \"price\": 115000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 1500,\r\n    \"cil_capacity\": 74,\r\n    \"model\": \"Audi 80 B1\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://images.honestjohn.co.uk/imagecache/file/fit/730x700/media/5723205/Audi%2080%20(4).jpg\"\r\n  },\r\n  {\r\n    \"year\": 1974,\r\n    \"km\": 1000000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Naranja\",\r\n    \"enter_date\": \"03/27/2011\",\r\n    \"name\": \"Audi 80B1 3\",\r\n    \"license\": \"012-AVC\",\r\n    \"price\": 115000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 1500,\r\n    \"cil_capacity\": 74,\r\n    \"model\": \"Audi 80 B1\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://www.autoslavia.com/wp-content/uploads/2017/08/1975-Audi-80-B1-3870E-772x580.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2001,\r\n    \"km\": 101000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"01/19/2014\",\r\n    \"name\": \"Audi A4 B6 1\",\r\n    \"license\": \"019-FCU\",\r\n    \"price\": 185000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 1984,\r\n    \"cil_capacity\": 150,\r\n    \"model\": \"Audi A4 B6\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://www.tuningblog.eu/tr/wp-content/uploads/2016/07/Audi-A4-B8-Limousine-ROT-RED-Tuning-Vossen-Wheels.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2007,\r\n    \"km\": 45000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"10/19/2016\",\r\n    \"name\": \"Audi A4 B6 2\",\r\n    \"license\": \"480-XEB\",\r\n    \"price\": 194000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 1984,\r\n    \"cil_capacity\": 150,\r\n    \"model\": \"Audi A4 B6\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://images.honestjohn.co.uk/imagecache/file/fit/730x700/media/7180406/Audi~A4~2001~(2).jpg\"\r\n  },\r\n  {\r\n    \"year\": 2004,\r\n    \"km\": 84000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"09/10/2017\",\r\n    \"name\": \"Audi A4 B6 3\",\r\n    \"license\": \"504-JXA\",\r\n    \"price\": 190000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 1984,\r\n    \"cil_capacity\": 150,\r\n    \"model\": \"Audi A4 B6\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://tzwqcc.com/wp-content/uploads/2017/07/Unique-Audi-A4-2004-29-in-addition-Vehicle-Ideas-with-Audi-A4-2004.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2016,\r\n    \"km\": 6000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"10/28/2014\",\r\n    \"name\": \"Audi A8 1\",\r\n    \"license\": \"104-IXB\",\r\n    \"price\": 235000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 4000,\r\n    \"cil_capacity\": 520,\r\n    \"model\": \"Audi A8\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://img.autocosmos.com/noticias/fotosprinc/NAZ_040dfdce154f4717881c61b8dd7e4475.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 190000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"12/02/2014\",\r\n    \"name\": \"Audi A8 2\",\r\n    \"license\": \"919-GUB\",\r\n    \"price\": 227000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 4000,\r\n    \"cil_capacity\": 520,\r\n    \"model\": \"Audi A8\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://img.drive.ru/i/0/58dce0c4ec05c49074000011.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2018,\r\n    \"km\": 80000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"03/01/2018\",\r\n    \"name\": \"Audi A8 3\",\r\n    \"license\": \"940-ZHZ\",\r\n    \"price\": 232000000,\r\n    \"brand\": \"Audi\",\r\n    \"centcubs\": 4000,\r\n    \"cil_capacity\": 520,\r\n    \"model\": \"Audi A8\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://images.dealer.com/autodata/us/large_stockphoto-color/2018/USC80AUC041A0/2Y2Y.jpg?impolicy=resize&w=650\"\r\n  },\r\n  {\r\n    \"year\": 1985,\r\n    \"km\": 5000000,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"02/21/2015\",\r\n    \"name\": \"Toyota Land-Cruiser 1\",\r\n    \"license\": \"469-FIJ\",\r\n    \"price\": 62000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 2200,\r\n    \"cil_capacity\": 61,\r\n    \"model\": \"Toyota Land-Cruiser\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://www.2040-cars.com/_content/cars/images/41/335941/001.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1986,\r\n    \"km\": 3080000,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"07/15/2015\",\r\n    \"name\": \"Toyota Land-Cruiser 2\",\r\n    \"license\": \"680-WPA\",\r\n    \"price\": 62000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 2200,\r\n    \"cil_capacity\": 61,\r\n    \"model\": \"Toyota Land-Cruiser\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://s13252.pcdn.co/wp-content/uploads/2017/12/5a39b5d08b84c_IMG_6810-940x665.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1990,\r\n    \"km\": 1700000,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"12/30/2008\",\r\n    \"name\": \"Toyota Land-Cruiser 3\",\r\n    \"license\": \"852-PPD\",\r\n    \"price\": 66000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 2200,\r\n    \"cil_capacity\": 61,\r\n    \"model\": \"Toyota Land-Cruiser\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.pinimg.com/originals/ef/66/86/ef6686cf3eccc5375be09b8eccfd2159.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2004,\r\n    \"km\": 808000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"04/01/2018\",\r\n    \"name\": \"Toyota Avenis 1\",\r\n    \"license\": \"751-PNX\",\r\n    \"price\": 94000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 1800,\r\n    \"cil_capacity\": 129,\r\n    \"model\": \"Toyota Avensis\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://images.toyota-europe.com/eu/avensis/width/1200/exterior-3.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2003,\r\n    \"km\": 775000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul Oscuro\",\r\n    \"enter_date\": \"10/31/2011\",\r\n    \"name\": \"Toyota Avenis 2\",\r\n    \"license\": \"808-BUK\",\r\n    \"price\": 98000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 1800,\r\n    \"cil_capacity\": 129,\r\n    \"model\": \"Toyota Avensis\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://images.toyota-europe.com/ro/avensis/width/1200/exterior-3.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2007,\r\n    \"km\": 300800,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Gris\",\r\n    \"enter_date\": \"10/12/2010\",\r\n    \"name\": \"Toyota Avenis 3\",\r\n    \"license\": \"610-OKA\",\r\n    \"price\": 98000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 1800,\r\n    \"cil_capacity\": 129,\r\n    \"model\": \"Toyota Avensis\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://acs2.blob.core.windows.net/imgcatalogo/l/P_7e6576512ddc4aa0a5e99fefb4bf0d41.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2016,\r\n    \"km\": 3060100,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"12/17/2017\",\r\n    \"name\": \"Toyota Hilux 1\",\r\n    \"license\": \"760-UVH\",\r\n    \"price\": 245000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 2400,\r\n    \"cil_capacity\": 171,\r\n    \"model\": \"Toyota Hilux\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://acs2.blob.core.windows.net/imgcatalogo/l/VA_b4ebb804b7574e6fada6c6332c429c8a.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 4070100,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"04/30/2018\",\r\n    \"name\": \"Toyota Hilux 2\",\r\n    \"license\": \"311-LZC\",\r\n    \"price\": 250000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 2400,\r\n    \"cil_capacity\": 171,\r\n    \"model\": \"Toyota Hilux\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://acs2.blob.core.windows.net/imgcatalogo/l/VA_d4b5b1ff1c7649da9909f90405cb4efc.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2016,\r\n    \"km\": 5708000,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Fuscia\",\r\n    \"enter_date\": \"05/30/2015\",\r\n    \"name\": \"Toyota Hilux 3\",\r\n    \"license\": \"780-YWH\",\r\n    \"price\": 253000000,\r\n    \"brand\": \"Toyota\",\r\n    \"centcubs\": 2400,\r\n    \"cil_capacity\": 171,\r\n    \"model\": \"Toyota Hilux\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.blogs.es/332cab/toyota-hilux-invincible-50-chrome-2018-2-/450_1000.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1978,\r\n    \"km\": 178000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Bronce\",\r\n    \"enter_date\": \"01/23/2010\",\r\n    \"name\": \"Mazda 626 1\",\r\n    \"license\": \"051-MBI\",\r\n    \"price\": 32000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 110,\r\n    \"model\": \"Mazda 626\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://http2.mlstatic.com/capot-mazda-artis-sedan-1995-al-1999-D_NQ_NP_361211-MLC20487939747_112015-F.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1980,\r\n    \"km\": 220000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Verde Claro\",\r\n    \"enter_date\": \"06/15/2012\",\r\n    \"name\": \"Mazda 626 2\",\r\n    \"license\": \"806-SLZ\",\r\n    \"price\": 30000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 110,\r\n    \"model\": \"Mazda 626\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://www.motor.com.co/files/article_main//files/crop//uploads/2016/01/22/56a2849a4da78.r_1453739689437.0-189-871-625.jpeg\"\r\n  },\r\n  {\r\n    \"year\": 1979,\r\n    \"km\": 175000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"08/28/2013\",\r\n    \"name\": \"Mazda 626 3\",\r\n    \"license\": \"495-QDQ\",\r\n    \"price\": 32000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 110,\r\n    \"model\": \"Mazda 626\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://s.aolcdn.com/commerce/autodata/images/20MAGED1.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2010,\r\n    \"km\": 537000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"12/14/2008\",\r\n    \"name\": \"Mazda 3 sedan 1\",\r\n    \"license\": \"445-GHO\",\r\n    \"price\": 54000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 165,\r\n    \"model\": \"Mazda 3 sedan\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://www.mazda.es/Canvas/all-new-showroom/mazda3-IPM-Fastback/l10n/master/Colour/images/LHD/Artic%20White/00.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2006,\r\n    \"km\": 484000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul Plata\",\r\n    \"enter_date\": \"01/12/2005\",\r\n    \"name\": \"Mazda 3 sedan 2\",\r\n    \"license\": \"361-KNB\",\r\n    \"price\": 54000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 165,\r\n    \"model\": \"Mazda 3 sedan\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://st.motortrendenespanol.com/uploads/sites/5/2017/05/2017-Mazda3-S-GT-front-three-quarter-in-motion-02-e1495488067784.jpg?interpolation=lanczos-none&fit=around%7C660%3A440\"\r\n  },\r\n  {\r\n    \"year\": 2009,\r\n    \"km\": 709500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blue\",\r\n    \"enter_date\": \"02/13/2004\",\r\n    \"name\": \"Mazda 3 sedan 3\",\r\n    \"license\": \"558-IWJ\",\r\n    \"price\": 56000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 165,\r\n    \"model\": \"Mazda 3 sedan\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://www.toyotapachuca.com.mx/seminuevos/Mazda-3-S-MT-2015-Negro/34.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 45000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"02/05/2014\",\r\n    \"name\": \"Mazda  MX-5 Roadster coupe 1\",\r\n    \"license\": \"093-BHQ\",\r\n    \"price\": 68000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2800,\r\n    \"cil_capacity\": 115,\r\n    \"model\": \"Mazda MX-5 Roadster coupe\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://images.autouncle.com/es/car_images/f7d46e3b-a8bb-47d1-88ef-6a05659c04bb_mazda-mx5-roadster-coupe-2-0-luxury.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2015,\r\n    \"km\": 30000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"08/10/2011\",\r\n    \"name\": \"Mazda  MX-5 Roadster coupe 2\",\r\n    \"license\": \"574-SQG\",\r\n    \"price\": 74000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2800,\r\n    \"cil_capacity\": 115,\r\n    \"model\": \"Mazda MX-5 Roadster coupe\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://d1ix0byejyn2u7.cloudfront.net/drive/images/made/drive/images/remote/https_f2.caranddriving.com/images/new/large/MazMX5RoadsterCoupe0409_794_529_70.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2016,\r\n    \"km\": 50000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Amarillo\",\r\n    \"enter_date\": \"03/21/2009\",\r\n    \"name\": \"Mazda  MX-5 Roadster coupe 3\",\r\n    \"license\": \"252-EGY\",\r\n    \"price\": 72000000,\r\n    \"brand\": \"Mazda\",\r\n    \"centcubs\": 2800,\r\n    \"cil_capacity\": 115,\r\n    \"model\": \"Mazda MX-5 Roadster coupe\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://carimages.com.au/8dfLMkJdolc9Jt3BlkfiKV-KYto=/fit-in/1000x750/filters:stretch(FFFFFF)/editorial/articleLeadwide-12bkk.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1994,\r\n    \"km\": 185000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"07/27/2010\",\r\n    \"name\": \"Mercedes Benz C112 1\",\r\n    \"license\": \"071-VVJ\",\r\n    \"price\": 182000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 6000,\r\n    \"cil_capacity\": 408,\r\n    \"model\": \"Mercedes Benz C112\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Mercedes-Benz_C112_1991_frontleft_2010-04-08_A.jpg/640px-Mercedes-Benz_C112_1991_frontleft_2010-04-08_A.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1998,\r\n    \"km\": 143500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Dorado a rallas\",\r\n    \"enter_date\": \"12/03/2010\",\r\n    \"name\": \"Mercedes Benz C1121 2\",\r\n    \"license\": \"234-WPF\",\r\n    \"price\": 184000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 6000,\r\n    \"cil_capacity\": 408,\r\n    \"model\": \"Mercedes Benz C112\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://i.pinimg.com/originals/0c/a5/66/0ca566eb3c4dc571034980e649685156.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1996,\r\n    \"km\": 324500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"11/06/2013\",\r\n    \"name\": \"Mercedes Benz C1121 3\",\r\n    \"license\": \"978-TKI\",\r\n    \"price\": 182000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 6000,\r\n    \"cil_capacity\": 408,\r\n    \"model\": \"Mercedes Benz C112\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://i.pinimg.com/originals/e1/4f/12/e14f12a5d9f9b66698a7ff85abf93fec.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2008,\r\n    \"km\": 65000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"01/06/2016\",\r\n    \"name\": \"Mercedes Benz CLC 1\",\r\n    \"license\": \"842-FKW\",\r\n    \"price\": 246000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 3200,\r\n    \"cil_capacity\": 272,\r\n    \"model\": \"Mercedes Benz CLC\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://www.lloydmotorgroup.com/ImageLibrary/Vehicle/906989-yVdAswkS1rMv7fAOUw.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2005,\r\n    \"km\": 10500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"12/04/2006\",\r\n    \"name\": \"Mercedes Benz CLC 2\",\r\n    \"license\": \"899-JNL\",\r\n    \"price\": 250000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 3200,\r\n    \"cil_capacity\": 272,\r\n    \"model\": \"Mercedes Benz CLC\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://images.demotores.com.ar/autos-0km/mercedes-benz-clc-250-sport_604x400_133_2_0_1.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2009,\r\n    \"km\": 87000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"05/10/2017\",\r\n    \"name\": \"Mercedes Benz CLC 3\",\r\n    \"license\": \"716-FXA\",\r\n    \"price\": 246000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 3200,\r\n    \"cil_capacity\": 272,\r\n    \"model\": \"Mercedes Benz CLC\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://parkers-images.bauersecure.com/pagefiles/199240/cut-out/600x400/merc_clc.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2015,\r\n    \"km\": 40500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"07/17/2012\",\r\n    \"name\": \"Mercedes Benz S63 AMG 1\",\r\n    \"license\": \"806-JED\",\r\n    \"price\": 340000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 6300,\r\n    \"cil_capacity\": 517,\r\n    \"model\": \"Mercedes Benz S63 AMG\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://images.techhive.com/images/article/2014/08/2014_mercedes-benz_s63_amg_3qtr-100409514-large.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 30000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"05/16/2017\",\r\n    \"name\": \"Mercedes Benz S63 AMG 1\",\r\n    \"license\": \"996-TRW\",\r\n    \"price\": 345000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 6300,\r\n    \"cil_capacity\": 517,\r\n    \"model\": \"Mercedes Benz S63 AMG\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"https://s1.cdn.autoevolution.com/images/testdrive2_chapters/mercedes-benz-s63-amg-4matic-review-2014-1.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 48500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"08/29/2010\",\r\n    \"name\": \"Mercedes Benz S63 AMG 1\",\r\n    \"license\": \"060-VEA\",\r\n    \"price\": 343000000,\r\n    \"brand\": \"Mercedes Benz\",\r\n    \"centcubs\": 6300,\r\n    \"cil_capacity\": 517,\r\n    \"model\": \"Mercedes Benz S63 AMG\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"automatica\",\r\n    \"image\": \"http://www.dupontregistry.com/autos/remote.jpg.ashx?404=default&width=644&height=428&urlb64=aHR0cHM6Ly93d3cuYXJkZW1vdG9yY2Fycy5jb20vZ2FsbGVyaWFfaW1hZ2VzLzMzLzMzX21haW5fbC5qcGc&hmac=JeqctzSrQPg\"\r\n  },\r\n  {\r\n    \"year\": 1992,\r\n    \"km\": 109700,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"09/08/2010\",\r\n    \"name\": \"Chevrolet Monza 1\",\r\n    \"license\": \"911-RQC\",\r\n    \"price\": 32000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 1600,\r\n    \"cil_capacity\": 110,\r\n    \"model\": \"Chevrolet Monza\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://www.elcarrocolombiano.com/wp-content/uploads/2018/01/20180107-CHEVROLET-MONZA-COLOMBIA-HISTORIA-01B.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1994,\r\n    \"km\": 113000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"08/19/2011\",\r\n    \"name\": \"Chevrolet Monza 2\",\r\n    \"license\": \"588-WYC\",\r\n    \"price\": 32000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 1600,\r\n    \"cil_capacity\": 110,\r\n    \"model\": \"Chevrolet Monza\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://carphotos.cardomain.com/ride_images/1/2908/1981/7268490001_large.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1993,\r\n    \"km\": 940000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"03/03/2012\",\r\n    \"name\": \"Chevrolet Monza 3\",\r\n    \"license\": \"786-MDT\",\r\n    \"price\": 3400000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 1600,\r\n    \"cil_capacity\": 110,\r\n    \"model\": \"Chevrolet Monza\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://carphotos.cardomain.com/ride_images/3/1843/2081/29606040001_large.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2008,\r\n    \"km\": 111500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"08/03/2014\",\r\n    \"name\": \"Chevrolet Evanda 1\",\r\n    \"license\": \"415-QIF\",\r\n    \"price\": 52000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 125,\r\n    \"model\": \"Chevrolet Evanda\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpDGuJHHjAjt6MAF_2czi5vIrfch33AjSzocaQFk1rbn1FDvEmjQ\"\r\n  },\r\n  {\r\n    \"year\": 2007,\r\n    \"km\": 94500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"09/01/2008\",\r\n    \"name\": \"Chevrolet Evanda 2\",\r\n    \"license\": \"931-JWM\",\r\n    \"price\": 54000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 125,\r\n    \"model\": \"Chevrolet Evanda\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://thumbs.img-sprzedajemy.pl/1000x901c/f7/00/8a/chevrolet-evanda-20-16v-z-niemiec-bezwypadkowy-45-lubuskie-475446811.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2005,\r\n    \"km\": 107800,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"12/01/2017\",\r\n    \"name\": \"Chevrolet Evanda 3\",\r\n    \"license\": \"920-KXG\",\r\n    \"price\": 52000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 125,\r\n    \"model\": \"Chevrolet Evanda\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://images.autouncle.com/es/car_images/a6b83e5b-8766-4dcf-8863-85da49a1ac63_chevrolet-evanda-2-0-cdx.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 35500,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Amarillo\",\r\n    \"enter_date\": \"12/08/2017\",\r\n    \"name\": \"Chevrolet Camaro ss 1\",\r\n    \"license\": \"997-QOI\",\r\n    \"price\": 676000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 6200,\r\n    \"cil_capacity\": 1014,\r\n    \"model\": \"Chevrolet Camaro ss\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.ndtvimg.com/i/2015-02/chevrolet-camaross_678x352_81422948306.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2017,\r\n    \"km\": 10000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"03/12/2017\",\r\n    \"name\": \"Chevrolet Camaro ss 2\",\r\n    \"license\": \"736-BTS\",\r\n    \"price\": 700000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 6200,\r\n    \"cil_capacity\": 1014,\r\n    \"model\": \"Chevrolet Camaro ss\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://veh-markets.com/uploads/postfotos/2013-chevrolet-camaro-ss-1le-7000-miles-1-owner-silver-ice-metallic-mint-1.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2018,\r\n    \"km\": 8700,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"03/01/2018\",\r\n    \"name\": \"Chevrolet Camaro ss 3\",\r\n    \"license\": \"088-RAT\",\r\n    \"price\": 740000000,\r\n    \"brand\": \"Chevrolet\",\r\n    \"centcubs\": 6200,\r\n    \"cil_capacity\": 1014,\r\n    \"model\": \"Chevrolet Camaro ss\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"http://autoproyecto.com/wp-content/uploads/2009/05/2010-Chevrolet-Camaro-SS.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1995,\r\n    \"km\": 1678000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Rojo\",\r\n    \"enter_date\": \"12/12/2008\",\r\n    \"name\": \"Renault 9/11 1\",\r\n    \"license\": \"416-MXI\",\r\n    \"price\": 14000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 1400,\r\n    \"cil_capacity\": 60,\r\n    \"model\": \"Renault 9/11\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://i.ytimg.com/vi/phD7RO3Ek84/maxresdefault.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1993,\r\n    \"km\": 5342000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"05/01/2009\",\r\n    \"name\": \"Renault 9/11 2\",\r\n    \"license\": \"037-AOW\",\r\n    \"price\": 17000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 1400,\r\n    \"cil_capacity\": 60,\r\n    \"model\": \"Renault 9/11\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://upload.wikimedia.org/wikipedia/commons/0/0f/WhiteRenault11GTLfront.jpg\"\r\n  },\r\n  {\r\n    \"year\": 1991,\r\n    \"km\": 1102000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Negro\",\r\n    \"enter_date\": \"08/07/2015\",\r\n    \"name\": \"Renault 9/11 3\",\r\n    \"license\": \"779-QKG\",\r\n    \"price\": 15000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 1400,\r\n    \"cil_capacity\": 60,\r\n    \"model\": \"Renault 9/11\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://tecnoautos.com/wp-content/uploads/2010/11/Renault94.jpg?fb01da\"\r\n  },\r\n  {\r\n    \"year\": 2002,\r\n    \"km\": 3408000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Marrón\",\r\n    \"enter_date\": \"12/08/2011\",\r\n    \"name\": \"Renault Logan 1\",\r\n    \"license\": \"824-ZTF\",\r\n    \"price\": 18000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 1600,\r\n    \"cil_capacity\": 85,\r\n    \"model\": \"Renault Logan\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://http2.mlstatic.com/renault-logan-16-privilege-105cv-cd-D_NQ_NP_747701-MLA20395486637_082015-F.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2004,\r\n    \"km\": 1015000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"07/21/2018\",\r\n    \"name\": \"Renault Logan 2\",\r\n    \"license\": \"670-ADK\",\r\n    \"price\": 21000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 1600,\r\n    \"cil_capacity\": 85,\r\n    \"model\": \"Renault Logan\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://acs2.blob.core.windows.net/imgcatalogo/l/VA_cbe53375b05441ac8744299ac8163817.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2007,\r\n    \"km\": 2092000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"03/25/2011\",\r\n    \"name\": \"Renault Logan 3\",\r\n    \"license\": \"189-BDR\",\r\n    \"price\": 19000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 1600,\r\n    \"cil_capacity\": 85,\r\n    \"model\": \"Renault Logan\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://http2.mlstatic.com/accesorios-pisa-pies-renault-logan-sandero-simbol-cromados-D_NQ_NP_677883-MCO25897275170_082017-F.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2011,\r\n    \"km\": 130500,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Blanco\",\r\n    \"enter_date\": \"01/23/2011\",\r\n    \"name\": \"Renault Koleos 1\",\r\n    \"license\": \"473-KOM\",\r\n    \"price\": 52000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 175,\r\n    \"model\": \"Renault Koleos\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://acs2.blob.core.windows.net/imgcatalogo/l/VA_3f87d2e0039c4d05a424712a70606461.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2014,\r\n    \"km\": 120600,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"08/12/2016\",\r\n    \"name\": \"Renault Koleos 2\",\r\n    \"license\": \"741-AIP\",\r\n    \"price\": 48000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 175,\r\n    \"model\": \"Renault Koleos\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://www.cdn.renault.com/content/dam/Renault/CL/personal-cars/koleos/hzg-koleos/hzg-phase1/COLORES/XZG-E3-34AvGMineralBeigeLedAllume19pFdBl.jpg.ximg.l_12_m.smart.jpg\"\r\n  },\r\n  {\r\n    \"year\": 2016,\r\n    \"km\": 110800,\r\n    \"category\": \"camioneta\",\r\n    \"color\": \"Azul\",\r\n    \"enter_date\": \"03/29/2010\",\r\n    \"name\": \"Renault Koleos 3\",\r\n    \"license\": \"983-THP\",\r\n    \"price\": 50000000,\r\n    \"brand\": \"Renault\",\r\n    \"centcubs\": 2000,\r\n    \"cil_capacity\": 175,\r\n    \"model\": \"Renault Koleos\",\r\n    \"doors\": 4,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://acs2.blob.core.windows.net/imgcatalogo/l/VA_bb96aa63edc84d33a5c93625aa20b6c1.jpg\"\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/cars/many",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"cars",
+								"many"
+							]
+						},
+						"description": "inserta muchos documentos de carros en la db de mongo"
+					},
+					"response": []
+				},
+				{
+					"name": "CARS - POST one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"year\": 1976,\r\n    \"km\": 100000,\r\n    \"category\": \"auto\",\r\n    \"color\": \"Plateado\",\r\n    \"enter_date\": \"11/06/2010\",\r\n    \"name\": \"BMW 507 1\",\r\n    \"license\": \"861-PDI\",\r\n    \"price\": 160000000,\r\n    \"brand\": \"BMW\",\r\n    \"centcubs\": 3200,\r\n    \"cil_capacity\": 150,\r\n    \"model\": \"BMW 507\",\r\n    \"doors\": 2,\r\n    \"transmission\": \"mecanica\",\r\n    \"image\": \"https://1.bp.blogspot.com/-vzt9wxbU-tY/Wq0UPgzwQCI/AAAAAAABo5U/pgLggGmND1QraS6wSIeCcL8inQ1oCEHfACLcBGAs/s1600/AP3T3146.JPG\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"cars"
+							]
+						},
+						"description": "Insert a car into mongo db collection"
+					},
+					"response": []
+				},
+				{
+					"name": "CARS - GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CARS - GET one by license",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/cars/861-PDI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"cars",
+								"861-PDI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CARS - PUT change by license",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"km\": 100000,\r\n        \"price\": 188000000,\r\n        \"year\": 1976,\r\n        \"color\": \"plateado\",\r\n        \"enter_date\": \"2010-11-06T05:00:00.000Z\",\r\n        \"name\": \"BMW 507 1\",\r\n        \"license\": \"861-PDI\",\r\n        \"centcubs\": 4800,\r\n        \"cil_capacity\": 175,\r\n        \"transmission\": \"mecanica\",\r\n        \"image\": \"https://1.bp.blogspot.com/-vzt9wxbU-tY/Wq0UPgzwQCI/AAAAAAABo5U/pgLggGmND1QraS6wSIeCcL8inQ1oCEHfACLcBGAs/s1600/AP3T3146.JPG\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/cars/861-PDI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"cars",
+								"861-PDI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CARS - DELETE by license",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/cars/861-PDI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"cars",
+								"861-PDI"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Comparisons",
+			"item": [
+				{
+					"name": "COMP - POST one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Comp_4\",\n\t\"license_one\": \"347-FNK\",\n\t\"license_two\": \"440-HYE\",\n\t\"user_username\": \"IvanGarL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/comparisons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"comparisons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COMP - GET all by user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/comparisons/IvanGarL",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"comparisons",
+								"IvanGarL"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COMP - GET specific by user & name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/comparisons/?user=IvanGarL&name=Comp_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"comparisons",
+								""
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "IvanGarL"
+								},
+								{
+									"key": "name",
+									"value": "Comp_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COMP - PUT one by username & name",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Comp_3\",\n\t\"license_one\": \"347-FNK\",\n\t\"license_two\": \"480-XEB\",\n\t\"user_username\": \"IvanGarL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/comparisons/?user=IvanGarL&name=Comp_2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"comparisons",
+								""
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "IvanGarL"
+								},
+								{
+									"key": "name",
+									"value": "Comp_2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COMP - DELETE one by username & name",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Comp_3\",\n\t\"license_one\": \"347-FNK\",\n\t\"license_two\": \"480-XEB\",\n\t\"user_username\": \"IvanGarL\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/comparisons/?user=IvanGarL&name=Comp_4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"comparisons",
+								""
+							],
+							"query": [
+								{
+									"key": "user",
+									"value": "IvanGarL"
+								},
+								{
+									"key": "name",
+									"value": "Comp_4"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "USER - POST signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"FelipeLav\",\n    \"name\": \"Felipe Laverde\",\n    \"email\": \"felipelaverde@app.com\",\n    \"age\": \"22\",\n    \"phone\": \"310000000\",\n    \"password\": \"IvanGL812\",\n    \"role\": \"User\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/users/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "USERS - GET ALL ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "ROLES - POST one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Guest\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESORS - POST one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Comparison\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/resource",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"resource"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERMS - POST one",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"guest_user\",\n\t\"create\" : false,\n\t\"read\" : false,\n\t\"write\" : false,\n\t\"delete\" : false,\n\t\"rol\" : \"Guest\",\n\t\"resource\" : \"User\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/auth/permission",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"permission"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ROLES - GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/auth/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RESORS - GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/auth/resources",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"resources"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERMS - GET all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/auth/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PERMS - DELETE one",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/auth/permission/admin_car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"auth",
+								"permission",
+								"admin_car"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
