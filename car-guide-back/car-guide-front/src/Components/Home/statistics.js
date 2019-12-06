@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./statistics.css";
+import DiagramaBarras from './diagramaBarras';
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -23,8 +24,13 @@ class Home extends Component {
       .then(data => {
         this.setState({ carros: data });
       });
-  }
+    }
 
+  renderDiagram = () => {
+    return (
+      <DiagramaBarras key={this.state.carros[4].name} cars={this.state.carros}></DiagramaBarras>
+    );
+  }
   renderCarsStatistics() {
     if (this.state.carros.length > 0) {
       return (
