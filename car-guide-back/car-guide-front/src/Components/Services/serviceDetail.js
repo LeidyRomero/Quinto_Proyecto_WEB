@@ -13,10 +13,17 @@ class ServiceDetail extends Component {
 
     componentDidMount()
     {
+        if (!navigator.onLine) {
+            if (localStorage.getItem('dataServiceDetail') === null)
+                this.setState({ data: "loading..." })
+            else
+                this.setState({ data: localStorage.getItem('dataServiceDetail') });
+        }
         fetch('/services/'+this.props.obj._id).then( (response) => {
             return response.json();
          }).then( (data) => {
             this.setState({data:data});
+            localStorage.setItem('dataServiceDetail', data);
          });            
     };
 

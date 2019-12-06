@@ -11,12 +11,21 @@ class CarDetail extends Component {
     this.renderDetail = this.renderDetail.bind(this);
   }
   componentDidMount() {
+    if (!navigator.onLine) {
+      if (localStorage.getItem('datosCarDetail') === null)
+          this.setState({ datos: "loading..." })
+      else
+          this.setState({ datos: localStorage.getItem('datosCarDetail') });
+          
+  }
+
     fetch("/cars/" + this.props.match.params.license)
       .then(response => {
         return response.json();
       })
       .then(data => {
         this.setState({ datos: data });
+        localStorage.setItem('datosCarDetail', data);
       });
   }
   renderDetail() {

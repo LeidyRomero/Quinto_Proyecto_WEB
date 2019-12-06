@@ -10,12 +10,19 @@ class UsersList extends Component {
     this.renderUsers = this.renderUsers.bind(this);
   }
   componentDidMount() {
+    if (!navigator.onLine) {
+      if (localStorage.getItem('userList') === null)
+          this.setState({ response: "loading..." })
+      else
+          this.setState({ response: localStorage.getItem('userList') });
+  }
     fetch("/users")
       .then(response => {
         return response.json();
       })
       .then(data => {
         this.setState({ usuarios: data });
+        localStorage.setItem('userList', data);
       });
   }
 

@@ -12,12 +12,19 @@ class CarsList extends Component {
     this.renderCars = this.renderCars.bind(this);
   }
   componentDidMount() {
+    if (!navigator.onLine) {
+      if (localStorage.getItem('carrosList') === null)
+          this.setState({ carros: "loading..." })
+      else
+          this.setState({ carros: localStorage.getItem('carrosList') });
+  }
     fetch("/cars")
       .then(response => {
         return response.json();
       })
       .then(data => {
         this.setState({ carros: data });
+        localStorage.setItem('carrosList', data);
       });
   }
 

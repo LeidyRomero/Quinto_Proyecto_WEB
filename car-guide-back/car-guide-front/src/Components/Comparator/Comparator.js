@@ -15,11 +15,18 @@ class Comparator extends Component {
         this.setState({opcion:event.target.value});
     };
     componentDidMount(){
+        if (!navigator.onLine) {
+            if (localStorage.getItem('datosComparador') === null)
+                this.setState({ datos: "loading..." })
+            else
+                this.setState({ datos: localStorage.getItem('datosComparador') });
+        }
         fetch(
             "/comparisons/" 
          ).then((response)=>{return response.json();
          }).then(data=>{
          this.setState({datos:data});
+         localStorage.setItem('datosComparador', data);
        })
     }
     renderComparator() {

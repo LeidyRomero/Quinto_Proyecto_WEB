@@ -10,6 +10,12 @@ class Home extends Component {
     this.renderCarsStatistics = this.renderCarsStatistics.bind(this);
   }
   componentDidMount() {
+    if (!navigator.onLine) {
+      if (localStorage.getItem('carros') === null)
+          this.setState({ carros: "loading..." })
+      else
+          this.setState({ carros: localStorage.getItem('carros') });
+  }
     fetch("/cars")
       .then(response => {
         return response.json();

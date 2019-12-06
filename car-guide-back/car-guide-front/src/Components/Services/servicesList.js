@@ -13,12 +13,19 @@ class ServicesList extends Component {
   }
 
   componentDidMount() {
+    if (!navigator.onLine) {
+      if (localStorage.getItem('serviciosList') === null)
+          this.setState({ servicios: "loading..." })
+      else
+          this.setState({ servicios: localStorage.getItem('serviciosList') });
+  }
     fetch("/services/")
       .then(response => {
         return response.json();
       })
       .then(data => {
         this.setState({ servicios: data });
+        localStorage.setItem('serviciosList', data);
       });
   }
 
