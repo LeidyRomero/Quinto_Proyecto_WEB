@@ -13,5 +13,6 @@
     "Car":"Auto",
     "Brand":"Marca",
     "Year":"Año",
-    "Mileage":"Kilometraje"
+    "Mileage":"Kilometraje",
+    "Services":"Servicios"
 }
