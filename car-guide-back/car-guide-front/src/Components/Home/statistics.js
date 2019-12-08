@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./statistics.css";
 import DiagramaBarras from './diagramaBarras';
+import { Link } from "react-router-dom";
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -36,7 +37,8 @@ class Home extends Component {
       return (
         <div className="trending">
           <div className="col-md-4">
-            <div className="car card space link">
+          <Link to={`/firstDiagram`}>
+          <div className="car card space link">
               <img
                 className="car card-img-top"
                 width="50"
@@ -47,8 +49,10 @@ class Home extends Component {
               <p className="car card-title">MÁS VENDIDO</p>
               <p className="car card-sub-title2">{this.state.carros[4].name}</p>
             </div>
+          </Link>{" "}
           </div>
           <div className="col-md-4">
+          <Link to={`/firstDiagram`}>
             <div className="car card space link">
               <img
                 className="car card-img-top"
@@ -62,8 +66,10 @@ class Home extends Component {
                 {this.state.carros[2].brand}
               </p>
             </div>
+            </Link>{" "}
           </div>
           <div className="col-md-4">
+          <Link to={`/firstDiagram`}>
             <div className="car card space link">
               <img
                 className="car card-img-top"
@@ -77,6 +83,7 @@ class Home extends Component {
                 {this.state.carros[3].model}
               </p>
             </div>
+            </Link>{" "}
           </div>
         </div>
       );

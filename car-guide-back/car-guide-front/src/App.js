@@ -14,6 +14,7 @@ import Register from './Components/Users/Register.js';
 import Comparator from './Components/Comparator/Comparator.js';
 import Forbidden from './Components/Forbidden/Forbidden.js';
 import { post, get } from 'axios';
+import DiagramaBarras from "./Components/Home/diagramaBarras";
 
 
 export default class app extends Component {
@@ -67,6 +68,7 @@ export default class app extends Component {
             <Route path="/car" render={() =><CarForm user_role={this.state.user_role}/>}/>
             <Route path="/comparator" component={Comparator} exact/>
             <Route path="/forbidden" component={Forbidden}/>
+            <Route path="/firstDiagram" component={DiagramaBarras}/>
           </BrowserRouter>
         
         <div id="footer">
