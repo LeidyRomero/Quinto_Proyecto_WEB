@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./users.css";
 import User from "./user";
+
+import {FormattedMessage} from "react-intl";
+
 class UsersList extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +46,7 @@ class UsersList extends Component {
           src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
         />
         <div id="wrap-users-title">
-          <h1 className="users-title">Usuarios</h1>
+          <h1 className="users-title"><FormattedMessage id="Users"/></h1>
         </div>
         <div className="users-list">
         {this.renderUsers()}

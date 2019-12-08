@@ -3,6 +3,9 @@ import "./cars.css";
 import "../../App.css";
 import { Link } from "react-router-dom";
 import Car from "./car";
+
+import {FormattedMessage} from "react-intl";
+
 class CarsList extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +51,7 @@ class CarsList extends Component {
             alt="Ventas"
           />
         <div id="wrap-sales-title">
-          <h1 id="sales-title">Ventas</h1>
+          <h1 id="sales-title"><FormattedMessage id="Sales"/></h1>
         </div>
         <div className="car-list">{this.renderCars()}</div>
       </div>

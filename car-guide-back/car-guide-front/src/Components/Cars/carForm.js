@@ -2,6 +2,10 @@ import React, {Component} from "react";
 import { Redirect } from "react-router-dom";
 import "./cars.css";
 import "../../App.css";
+
+import {FormattedMessage} from "react-intl";
+import {FormattedNumber} from "react-intl";
+
 class CarForm extends Component {
 
     constructor(props) {
@@ -34,15 +38,15 @@ class CarForm extends Component {
           src="https://images.unsplash.com/photo-1496327249223-c84a3c1db090?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80"
         ></img>
         <div id="wrap-form-title">
-          <h1 id="form-title">Registrar vehículo</h1>
+          <h1 id="form-title"><FormattedMessage id="RegisterVehicle"/></h1>
         </div>
         <div className="card form">
-          <h2 id="mandatory-form">Los campos marcados (*) son obligatorios:</h2>
+          <h2 id="mandatory-form"><FormattedMessage id="RequiredFields"/></h2>
           <form onSubmit={this.handleSubmit}>
             <div className="row">
               <div className="col">
                 <label>
-                  Año de modelo del auto: (*){" "}
+                <FormattedMessage id="ModelYear"/>{" "}
                   <input
                     type="number"
                     className="form-control"
@@ -54,7 +58,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Kilometros recorridos por el auto: (*){" "}
+                <FormattedMessage id="TraveledKM"/>{" "}
                   <input
                     type="number"
                     className="form-control"
@@ -68,7 +72,7 @@ class CarForm extends Component {
             <div className="row">
               <div className="col">
                 <label>
-                  Categoria del auto: (*){" "}
+                <FormattedMessage id="CarCategory"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -80,7 +84,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Color del auto: (*){" "}
+                <FormattedMessage id="CarColor"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -94,7 +98,7 @@ class CarForm extends Component {
             <div className="row">
               <div className="col">
                 <label>
-                  Fecha actual: (*){" "}
+                <FormattedMessage id="Date"/>{" "}
                   <input
                     type="date"
                     className="form-control"
@@ -106,7 +110,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Nombre del auto: (*){" "}
+                <FormattedMessage id="CarName"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -120,7 +124,7 @@ class CarForm extends Component {
             <div className="row">
               <div className="col">
                 <label>
-                  Placa del auto: (*){" "}
+                <FormattedMessage id="CarPlate"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -134,7 +138,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Precio de venta: (*){" "}
+                <FormattedMessage id="SellingPrice"/>{" "}
                   <input
                     type="number"
                     className="form-control"
@@ -148,7 +152,7 @@ class CarForm extends Component {
             <div className="row">
               <div className="col">
                 <label>
-                  Marca del auto: (*){" "}
+                <FormattedMessage id="CarBrand"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -160,7 +164,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Cilindraje en centimetros cubicos: (*){" "}
+                <FormattedMessage id="DisplacementCC"/>{" "}
                   <input
                     type="number"
                     className="form-control"
@@ -174,7 +178,7 @@ class CarForm extends Component {
             <div className="row">
               <div className="col">
                 <label>
-                  Capacidad de cilindraje: (*){" "}
+                <FormattedMessage id="DisplacementCap"/>{" "}
                   <input
                     type="number"
                     className="form-control"
@@ -186,7 +190,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Modelo del auto: (*){" "}
+                <FormattedMessage id="CarModel"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -200,7 +204,7 @@ class CarForm extends Component {
             <div className="row">
               <div className="col">
                 <label>
-                  Número de puertas del auto: (*){" "}
+                <FormattedMessage id="DoorsNum"/>{" "}
                   <input
                     type="number"
                     min="1"
@@ -214,7 +218,7 @@ class CarForm extends Component {
               </div>
               <div className="col">
                 <label>
-                  Transmision del auto: (*){" "}
+                <FormattedMessage id="CarTransm"/>{" "}
                   <input
                     type="text"
                     className="form-control"
@@ -226,7 +230,7 @@ class CarForm extends Component {
               </div>
             </div>
             <button type="submit" className="btn-form">
-              Agregar auto
+            <FormattedMessage id="AddCar"/>
             </button>
             <div></div>
           </form>

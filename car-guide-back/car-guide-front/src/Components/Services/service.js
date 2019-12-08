@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./services.css";
+
+import {FormattedNumber} from "react-intl";
+
 class Service extends Component {
   render() {
     console.log(this.props);
@@ -18,7 +21,7 @@ class Service extends Component {
           <p id="service-description">{this.props.service.description}</p>
 
           <p className="service-price">
-            <b>$ {this.props.service.price} COP </b>
+            <b>$ <FormattedNumber value={this.props.service.price}/> COP </b>
           </p>
         </div>
       </div>

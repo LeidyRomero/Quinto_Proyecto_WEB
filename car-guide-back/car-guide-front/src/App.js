@@ -16,6 +16,7 @@ import Forbidden from './Components/Forbidden/Forbidden.js';
 import { post, get } from 'axios';
 import DiagramaBarras from "./Components/Home/diagramaBarras";
 
+import {FormattedMessage} from "react-intl";
 
 export default class app extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ export default class app extends Component {
 
   componentWillMount(){
     
-    this.state.logged = <NavLink to="/login"> <button className="nav-btn-login">LOGIN</button></NavLink>;
+    this.state.logged = <NavLink to="/login"> <button className="nav-btn-login"><FormattedMessage id="Login"/></button></NavLink>;
 
   }
 
@@ -46,7 +47,7 @@ export default class app extends Component {
     this.setState({
       user_name: newUsername,
       user_role: newUserRole,
-      logged : <Button className="nav-btn-logout" variant="warning" onClick={this.handdleLogout}>Logout</Button>,
+      logged : <Button className="nav-btn-logout" variant="warning" onClick={this.handdleLogout}><FormattedMessage id="Logout"/></Button>,
     });
   }
 

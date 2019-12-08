@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "../../App.css";
 
+import {FormattedMessage} from "react-intl";
+import {FormattedNumber} from "react-intl";
+
 class ServiceDetail extends Component {
 
     constructor(props){
@@ -33,9 +36,9 @@ class ServiceDetail extends Component {
             return (
                 <div>
                     <h1>{this.props.data.name}</h1>
-                    <h3>Descripcion:</h3>
+                    <h3><FormattedMessage id="Description"/>:</h3>
                     <p>{this.props.data.description}</p>
-                    <h3>Precio: </h3><p>{this.props.data.price}</p>
+                    <h3><FormattedMessage id="Price"/>: </h3><p>$<FormattedNumber value={this.props.data.price}/> COP</p>
                     <img href={`${this.props.data.image}`} alt={`${this.props.data.name}`}/>
                 </div>
             );

@@ -4,6 +4,8 @@ import { post } from 'axios';
 import App from '../../App';
 import { isUndefined } from 'util';
 
+import {FormattedMessage} from "react-intl";
+
 
 class Login extends React.Component {
   constructor(props) {
@@ -56,7 +58,7 @@ class Login extends React.Component {
               <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
                 <div className="card card-signin my-5">
                   <div className="card-body">
-                    <h5 className="card-title text-center">Ingresa</h5>
+                    <h5 className="card-title text-center"><FormattedMessage id="Sigin"/></h5>
                     <form className="form-signin"  onSubmit={this.handleSubmit}>
                       <div className="form-label-group">
                         <input type="email" id="login-email" className="form-control" placeholder="Email" required autoFocus/>
@@ -66,17 +68,17 @@ class Login extends React.Component {
                       </div>
                       <div className="custom-control custom-checkbox mb-3">
                         <input type="checkbox" className="custom-control-input" id="customCheck1"></input>
-                        <label className="custom-control-label" htmlFor="customCheck1">Recordarme</label>
+                        <label className="custom-control-label" htmlFor="customCheck1"><FormattedMessage id="RememberMe"/></label>
                       </div>
-                      <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Ingresar</button>
+                      <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit"><FormattedMessage id="Signin"/></button>
                       <br></br>
                       <small className="text-center">
-                        ¿No tienes una cuenta? Regístrate{" "}
-                        <Link to="/signup">aquí</Link>
+                        <FormattedMessage id="RegisterMsg"/>{" "}
+                        <Link to="/signup"><FormattedMessage id="Here"/></Link>
                       </small>
                       <hr className="my-4"></hr>
-                      <button className="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i className="fab fa-google mr-2"></i> Ingresa con Google</button>
-                      <button className="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i className="fab fa-facebook-f mr-2"></i> Ingresa con Facebook</button>                   
+                      <button className="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i className="fab fa-google mr-2"></i> <FormattedMessage id="Google"/></button>
+                      <button className="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i className="fab fa-facebook-f mr-2"></i> <FormattedMessage id="Facebook"/></button>                   
                     </form>
                   </div>
                 </div>

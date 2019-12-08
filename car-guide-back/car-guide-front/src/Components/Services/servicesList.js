@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Service from "./service.js";
 import "../../App.css";
-import "./services.css"
+import "./services.css";
+
+import {FormattedMessage} from "react-intl";
 
 class ServicesList extends Component {
   constructor(props) {
@@ -50,7 +52,7 @@ class ServicesList extends Component {
           src="https://di-uploads-pod6.dealerinspire.com/mariettatoyota/uploads/2019/04/2019-Toyota-Prius-models-banner.jpg"
         />
         <div id="wrap-services-title">
-          <h1 className="services-main-title">Servicios</h1>
+          <h1 className="services-main-title"><FormattedMessage id="Services"/></h1>
         </div>
 
         <div className="dashboard-background">

@@ -5,6 +5,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 import "./NavegacionFooter.css";
 import Cookies from 'js-cookie';
 
+import {FormattedMessage} from "react-intl";
 
 class Navegacion extends Component {
   constructor(props) { 
@@ -21,9 +22,9 @@ class Navegacion extends Component {
       <nav className="navbar" role="navigation">
           <NavLink to="/" id="logo-inicio"><img src="logo.png" alt="nav-logo" id="nav-logo"/></NavLink>
               <div className="nav-links">
-                  <NavLink to="/" className="nav-link" id="btn-inicio">INICIO</NavLink>
-                  <NavLink to="/cars" className="nav-link" id="btn-cars">VENTAS</NavLink>
-                  <NavLink to="/services" className="nav-link" id="btn-services">SERVICIOS</NavLink>
+                  <NavLink to="/" className="nav-link" id="btn-inicio"><FormattedMessage id="HOME"/></NavLink>
+                  <NavLink to="/cars" className="nav-link" id="btn-cars"><FormattedMessage id="SALES"/></NavLink>
+                  <NavLink to="/services" className="nav-link" id="btn-services"><FormattedMessage id="SERVICES"/></NavLink>
                   {/*TODO: implements this component */}
                   {/* <NavLink to="/users" className="nav-link" id="btn-users">USUARIOS</NavLink> */}
                   <NavLink to="/car" className="nav-link" id="btn-add">ADMIN</NavLink>

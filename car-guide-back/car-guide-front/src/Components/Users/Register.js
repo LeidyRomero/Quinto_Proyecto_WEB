@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, Redirect } from "react-router-dom";
 import { post } from 'axios';
 
+import {FormattedMessage} from "react-intl";
+
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -60,11 +62,11 @@ class Register extends React.Component {
           </div>
             <div className="col-md-6">
               <div className="card card-signin my-5">
-                <div className="card-header text-center">REGISTRO</div>
+                <div className="card-header text-center"><FormattedMessage id="REGISTER"/></div>
                     <div className="card-body">
                       <form className="form-horizontal form-signin" id="register-form"  onSubmit={this.handleSubmit}>
                           <div className="form-group">
-                              <label htmlFor="name" className="cols-sm-2 control-label">Nombre</label>
+                              <label htmlFor="name" className="cols-sm-2 control-label"><FormattedMessage id="Name"/></label>
                               <div className="cols-sm-10">
                                   <div className="input-group">
                                       <span className="input-group-addon"></span>
@@ -82,7 +84,7 @@ class Register extends React.Component {
                               </div>
                           </div>
                           <div className="form-group">
-                              <label htmlFor="username" className="cols-sm-2 control-label">Usuario</label>
+                              <label htmlFor="username" className="cols-sm-2 control-label"><FormattedMessage id="Username"/></label>
                               <div className="cols-sm-10">
                                   <div className="input-group">
                                       <span className="input-group-addon"></span>
@@ -91,7 +93,7 @@ class Register extends React.Component {
                               </div>
                           </div>
                           <div className="form-group">
-                              <label htmlFor="username" className="cols-sm-2 control-label">Edad</label>
+                              <label htmlFor="username" className="cols-sm-2 control-label"><FormattedMessage id="Age"/></label>
                               <div className="cols-sm-10">
                                   <div className="input-group">
                                       <span className="input-group-addon"></span>
@@ -100,7 +102,7 @@ class Register extends React.Component {
                               </div>
                           </div>
                           <div className="form-group">
-                              <label htmlFor="username" className="cols-sm-2 control-label">Teléfono</label>
+                              <label htmlFor="username" className="cols-sm-2 control-label"><FormattedMessage id="Phone"/></label>
                               <div className="cols-sm-10">
                                   <div className="input-group">
                                       <span className="input-group-addon"></span>
@@ -109,7 +111,7 @@ class Register extends React.Component {
                               </div>
                           </div>
                           <div className="form-group">
-                              <label htmlFor="password" className="cols-sm-2 control-label">Contraseña</label>
+                              <label htmlFor="password" className="cols-sm-2 control-label"><FormattedMessage id="Password"/></label>
                               <div className="cols-sm-10">
                                   <div className="input-group">
                                       <span className="input-group-addon"></span>
@@ -118,7 +120,7 @@ class Register extends React.Component {
                               </div>
                           </div>
                           <div className="form-group">
-                              <label htmlFor="confirm" className="cols-sm-2 control-label">Confirma la contraseña</label>
+                              <label htmlFor="confirm" className="cols-sm-2 control-label"><FormattedMessage id="Confirm"/></label>
                               <div className="cols-sm-10">
                                   <div className="input-group">
                                       <span className="input-group-addon"></span>
@@ -132,11 +134,11 @@ class Register extends React.Component {
                                   <input type="hidden" className="form-control input-lg" id="register-role" name="role"  value="User"/>                                  </div>
                               </div>
                           </div>
-                          <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Registrarse</button>
+                          <button className="btn btn-lg btn-primary btn-block text-uppercase" type="submit"><FormattedMessage id="Register"/></button>
                           <div className="login-register">
                             <small className="text-center">
-                              ¿Ya tienes una cuenta? Ingresa{" "}
-                              <Link to="/login">aquí</Link>
+                            <FormattedMessage id="LoginMsg"/>{" "}
+                              <Link to="/login"><FormattedMessage id="Here"/></Link>
                             </small>                        
                           </div>
                       </form>

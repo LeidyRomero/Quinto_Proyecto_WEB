@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "./cars.css";
 import "../../App.css";
 
+import {FormattedMessage} from "react-intl";
+import {FormattedNumber} from "react-intl";
+
 class CarDetail extends Component {
   constructor(props) {
     super(props);
@@ -47,24 +50,24 @@ class CarDetail extends Component {
               <div className="col-md-3">
                 <div className="card-deck2">
                   <div className="data-card">
-                    <p><span id="detail-span">Precio: </span>{this.state.datos[0].price}</p>
-                    <p><span id="detail-span">Año: </span> {this.state.datos[0].year}</p>
-                    <p><span id="detail-span">Kilometraje: </span> {this.state.datos[0].km}</p>
-                    <p><span id="detail-span">Categoría: </span> {this.state.datos[0].category}</p>
-                    <p><span id="detail-span">Color: </span> {this.state.datos[0].color}</p>
-                    <p><span id="detail-span">Placa: </span> {this.state.datos[0].license}</p>
+                    <p><span id="detail-span"><FormattedMessage id="Price" />: </span>$<FormattedNumber value={this.state.datos[0].price}/> COP</p>
+                    <p><span id="detail-span"><FormattedMessage id="Year" />: </span> {this.state.datos[0].year}</p>
+                    <p><span id="detail-span"><FormattedMessage id="Mileage"/>: </span> <FormattedNumber value={this.state.datos[0].km}/> km</p>
+                    <p><span id="detail-span"><FormattedMessage id="Category"/>: </span> <FormattedMessage id={this.state.datos[0].category}/></p>
+                    <p><span id="detail-span"><FormattedMessage id="Color"/>: </span> <FormattedMessage id={this.state.datos[0].color}/></p>
+                    <p><span id="detail-span"><FormattedMessage id="LicensePlate"/>: </span> {this.state.datos[0].license}</p>
                   </div>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="card-deck2">
                   <div className="data-card">
-                    <p><span id="detail-span">Marca: </span> {this.state.datos[0].brand}</p>
-                    <p><span id="detail-span">Cilindraje (cm): </span> {this.state.datos[0].centcubs}</p>
-                    <p><span id="detail-span">Cilindraje: </span>{this.state.datos[0].cil_capacity}</p>
-                    <p><span id="detail-span">Número de puertas: </span> {this.state.datos[0].doors}</p>
-                    <p><span id="detail-span">Transmisión: </span> {this.state.datos[0].transmission}</p>
-                    <p><span id="detail-span">Modelo: </span> {this.state.datos[0].model}</p>
+                    <p><span id="detail-span"><FormattedMessage id="Brand"/>: </span> {this.state.datos[0].brand}</p>
+                    <p><span id="detail-span"><FormattedMessage id="Displacement"/> (cc): </span> <FormattedNumber value={this.state.datos[0].centcubs}/></p>
+                    <p><span id="detail-span"><FormattedMessage id="Displacement"/>: </span> <FormattedNumber value={this.state.datos[0].cil_capacity}/></p>
+                    <p><span id="detail-span"><FormattedMessage id="Doors"/>: </span> {this.state.datos[0].doors}</p>
+                    <p><span id="detail-span"><FormattedMessage id="Transmission"/>: </span> <FormattedMessage id={this.state.datos[0].transmission}/></p>
+                    <p><span id="detail-span"><FormattedMessage id="Model"/>: </span> {this.state.datos[0].model}</p>
                   </div>
                 </div>
               </div>
