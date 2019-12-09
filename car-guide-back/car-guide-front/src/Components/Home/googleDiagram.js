@@ -36,6 +36,7 @@ export default class GoogleDiagram extends React.Component {
         easing: 'linear',
         duration: 1500,
       },
+      colors: ['#cb2e2d']
   }}
   // For tests
   rootProps={{ 'data-testid': '1' }}
