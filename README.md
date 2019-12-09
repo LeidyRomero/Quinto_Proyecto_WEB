@@ -1,5 +1,8 @@
 # Entrega 5 - The car guide
 
+# URL
+http://18.234.143.217:3000/
+
 # Video
 <a href="https://uniandes-my.sharepoint.com/:v:/g/personal/pa_suarezm_uniandes_edu_co/EYFbGy1Iaa1PpYAHcRYBkY8B5mKOJLGNOBpcxWI9UkClJQ?e=VTKdHw">En esta ubicación</a> se puede encontrar un video mostrando la funcionalidad de la aplicación web propuesta. Es necesario un usuario uniandes para acceder a dicha ubicación.
 
@@ -27,12 +30,6 @@ Dueños de autos de Colombia, interesados en venta y/o mantenimiento de automovi
   <li>Ejecutar el proyecto ejecutando el comando "npm start" en ambas terminales (una sobre TheCarGuide/car-guide-back y otra sobre TheCarGuide/car-guide-front)</li>
   <li>Abrir en un navegador la dirección localhost:3000</li>
 </ol>
-
-<h4>Instrucciones de uso:</h4>
-<ol>
-  <li>Para usar la aplicación, ingrese en el siguiente link: http://thecarguide.herokuapp.com</li>
-  <li>Algunas funcionalidades de la aplicación solo son accesibles cuando el usuario este logueado, para esto se debe registrar y posteriormente loguearse, el proceso de registro solo se debe hacer la primera vez.</li>
-</ol> 
 
 # Sobre el proyecto
 <h4>Integrantes:</h4>
