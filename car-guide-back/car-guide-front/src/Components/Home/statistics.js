@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./statistics.css";
 import DiagramaBarras from './diagramaBarras';
+import GoogleDiagram from './googleDiagram';
+
 import { Link } from "react-router-dom";
 class Home extends Component {
   constructor(props) {
@@ -146,6 +148,13 @@ class Home extends Component {
             src="https://1000logos.net/wp-content/uploads/2018/04/Hyundai-Logo.png"
           />
         </div>
+        <div className="branding-title" id="space">
+          <p id="branding-text">
+            Visualiza las marcas que se ajustan a tu {" "}
+            <span style={{ color: "#cb2e2d" }}>presupuesto</span>
+          </p>
+        </div>
+        <GoogleDiagram />
       </div>
     );
   }
