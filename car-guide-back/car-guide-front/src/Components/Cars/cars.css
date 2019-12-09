@@ -49,6 +49,11 @@
   margin-bottom: 15px;
 }
 
+.car.link:hover .car.card-title {
+  color:#262E35;
+  font-weight: bold;
+}
+
 .car.card-title {
   font-size: 12px;
   font-weight: 700;
@@ -121,6 +126,10 @@
   background-color: #cb2e2d;
 }
 
+.card.sale:hover .sale-category {
+  color: #262E35;
+}
+
 .card.sale:hover .sale-price {
   background-color: white;
   color: #cb2e2d;
@@ -149,6 +158,11 @@
   margin-left: 20px;
 }
 
+.card.sale:hover #info-span{
+  color: #262E35;
+  font-weight: bold;
+}
+
 .card-img-top {
   object-fit: cover;
 }
@@ -173,72 +187,71 @@
 }
 
 .data-card {
-    background-color: rgb(252, 252, 252);
-    border-radius: 6px;
-    color: black;
-    margin-top: 18px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
-    padding: 25px 10px;
-  }
-  .dashboard-background2 {
-    background-color: #5555;
-    padding: 0 40px;
-    overflow-y: auto+30px;
-    height: 100%;
-  }
-  .link {
-    transition: 0.4s;
-    color: black;
-    background-color: rgb(252, 252, 252);
-    font-size: 32px;
-    text-decoration: none;
-    padding: 0 10px;
-    margin: 0 10px;
-    text-align: center;
-  }
-  .link:hover {
-    background-color: #cf2323b6;
-    color: white;
-    padding: 11px 10px;
-    text-decoration: none;
-  }
-  .space {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-decoration: none;
-
-  }
-  .space2 {
-    margin-top: 15px;
-    background-color: #5555;
-    margin-bottom: 15px;
-  }
-  #card-title {
-    font-size: 32px;
-    color:black;
-    text-decoration: none;
-    text-align: center;
-  }
-  #card-sub-title {
-    font-size: 20px;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-  }
-  .card-deck2 {
-    display: flex;
-    font-size: 24px;
-    justify-content: space-around;
-  }
+  background-color: rgb(252, 252, 252);
+  border-radius: 6px;
+  color: black;
+  margin-top: 18px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  padding: 25px 10px;
+}
+.dashboard-background2 {
+  background-color: #5555;
+  padding: 0 40px;
+  overflow-y: auto + 30px;
+  height: 100%;
+}
+.link {
+  transition: 0.4s;
+  color: black;
+  background-color: rgb(252, 252, 252);
+  font-size: 32px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  text-align: center;
+}
+.link:hover {
+  background-color: #cf2323b6;
+  color: white;
+  padding: 11px 10px;
+  text-decoration: none;
+}
+.space {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+.space2 {
+  margin-top: 15px;
+  background-color: #5555;
+  margin-bottom: 15px;
+}
+#card-title {
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+#card-sub-title {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+.card-deck2 {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-around;
+}
 
 #detail-span {
   color: rgb(139, 139, 139);
 }
 
-.card.form{
+.card.form {
   background-color: #272e36;
   color: white;
   padding: 20px 0 20px 60px;
@@ -259,12 +272,12 @@
   color: white;
 }
 
-#mandatory-form{
+#mandatory-form {
   color: rgb(139, 139, 139);
   font-size: 1.1em;
 }
 
-.btn-form{
+.btn-form {
   background-color: #cb2e2d;
   font-weight: bold;
   color: white;
@@ -274,7 +287,7 @@
   transition: 0.4s;
 }
 
-.btn-form:hover{
+.btn-form:hover {
   color: #cb2e2d;
   background-color: white;
 }

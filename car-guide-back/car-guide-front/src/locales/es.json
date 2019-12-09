@@ -84,5 +84,13 @@
     "PBRAND": "MARCA MÁS POPULAR",
     "PMODEL": "MODELO MÁS POPULAR",
     "SLOGAN": "LA GUÍA IDEAL",
-    "Mission": "Trabajamos para brindarte toda la información que necesitas para tomar las mejores decisiones para que encuentres el auto de tus sueños."
+    "Mission": "Trabajamos para brindarte toda la información que necesitas para tomar las mejores decisiones para que encuentres el auto de tus sueños.",
+    "Conoce": "Conoce las últimas",
+    "tendencias": "tendencias",
+    "Encuentra": "Encuentra marcas",
+    "reconocidas": "reconocidas",
+    "Visualiza": "Visualiza las marcas que se ajustan a tu ",
+    "presupuesto": "presupuesto",
+
+    "LoadingChart": "Cargando gráfica"
 }

@@ -81,5 +81,12 @@
   margin: 0 50px; 
 }
 
+.googleChart-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-
+#space{
+  padding: 40px 0;
+}
