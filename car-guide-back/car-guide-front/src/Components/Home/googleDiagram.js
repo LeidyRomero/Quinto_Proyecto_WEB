@@ -22,7 +22,7 @@ export default class GoogleDiagram extends React.Component {
     ['Mazda', 52444444],
   ]}
   options={{
-    title: 'Precio de los automóviles',
+    title: 'Precio promedio de los automóviles',
     chartArea: { width: '50%' },
     hAxis: {
       title: 'Rango de Precios',
