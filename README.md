@@ -4,7 +4,7 @@
 http://18.234.143.217:3000/
 
 # Video
-<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/pa_suarezm_uniandes_edu_co/EYFbGy1Iaa1PpYAHcRYBkY8B5mKOJLGNOBpcxWI9UkClJQ?e=VTKdHw">En esta ubicación</a> se puede encontrar un video mostrando la funcionalidad de la aplicación web propuesta. Es necesario un usuario uniandes para acceder a dicha ubicación.
+<a href="https://uniandes-my.sharepoint.com/:v:/g/personal/pa_suarezm_uniandes_edu_co/Eal_jfjKjoZCqOToDr4eyywB45I9eNu9-GeOUzxzbKxEfQ?e=MPgpBU">En esta ubicación</a> se puede encontrar un video mostrando la funcionalidad de la aplicación web propuesta. Es necesario un usuario uniandes para acceder a dicha ubicación.
 
 # Descripción
 <h4>Solución:</h4>
