@@ -3,6 +3,8 @@ import "./statistics.css";
 import DiagramaBarras from './diagramaBarras';
 import GoogleDiagram from './googleDiagram';
 
+import {FormattedMessage} from "react-intl";
+
 import { Link } from "react-router-dom";
 class Home extends Component {
   constructor(props) {
@@ -48,7 +50,7 @@ class Home extends Component {
                 src={`${this.state.carros[4].image}`}
                 alt="Card image cap"
               ></img>
-              <p className="car card-title">MÁS VENDIDO</p>
+              <p className="car card-title"><FormattedMessage id="BESTSELLING"/></p>
               <p className="car card-sub-title2">{this.state.carros[4].name}</p>
             </div>
           </Link>{" "}
@@ -63,7 +65,7 @@ class Home extends Component {
                 src={`${this.state.carros[2].image}`}
                 alt="Card image cap"
               ></img>
-              <p className="car card-title">MARCA MÁS POPULAR</p>
+              <p className="car card-title"><FormattedMessage id="PBRAND"/></p>
               <p className="car card-sub-title2">
                 {this.state.carros[2].brand}
               </p>
@@ -80,7 +82,7 @@ class Home extends Component {
                 src={`${this.state.carros[3].image}`}
                 alt="Card image cap"
               ></img>
-              <p className="car card-title">MODELO MÁS POPULAR</p>
+              <p className="car card-title"><FormattedMessage id="PMODEL"/></p>
               <p className="car card-sub-title2">
                 {this.state.carros[3].model}
               </p>
@@ -99,23 +101,21 @@ class Home extends Component {
             <img src="home.jpg" width="100%" alt="logo" />
           </a>
           <div className="text-block">
-            <h4 id="box-title">LA GUÍA IDEAL</h4>
+            <h4 id="box-title"><FormattedMessage id="SLOGAN"/></h4>
             <p id="box-text">
-              Trabajamos para brindarte toda la información que necesitas para
-              tomar las mejores decisiones para que encuentres el auto de tus
-              sueños.
+              <FormattedMessage id="Mission"/>
             </p>
           </div>
         </div>
         <h1 className="align">
-          Conoce las últimas <span className="red">tendencias</span>
+          <FormattedMessage id="Conoce"/> <span className="red"><FormattedMessage id="tendencias"/></span>
         </h1>
         {this.renderCarsStatistics()}
 
         <div className="branding-title">
           <p id="branding-text">
-            Encuentra marcas{" "}
-            <span style={{ color: "#cb2e2d" }}>reconocidas</span>
+            <FormattedMessage id="Encuentra"/>{" "}
+            <span style={{ color: "#cb2e2d" }}><FormattedMessage id="reconocidas"/></span>
           </p>
         </div>
         <div className="branding">
@@ -150,8 +150,8 @@ class Home extends Component {
         </div>
         <div className="branding-title" id="space">
           <p id="branding-text">
-            Visualiza las marcas que se ajustan a tu {" "}
-            <span style={{ color: "#cb2e2d" }}>presupuesto</span>
+            <FormattedMessage id="Visualiza"/> {" "}
+            <span style={{ color: "#cb2e2d" }}><FormattedMessage id="presupuesto"/></span>
           </p>
         </div>
         <GoogleDiagram />

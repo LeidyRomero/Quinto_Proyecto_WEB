@@ -1,6 +1,8 @@
 import * as React from "react";
 import { render } from "react-dom";
 import { Chart } from "react-google-charts";
+
+import {FormattedMessage} from "react-intl";
  
 export default class GoogleDiagram extends React.Component {
   render() {
@@ -10,7 +12,7 @@ export default class GoogleDiagram extends React.Component {
   width={'1000px'}
   height={'600px'}
   chartType="BarChart"
-  loader={<div>Loading Chart</div>}
+  loader={<div><FormattedMessage id="LoadingChart"/></div>}
   data={[
     ['Marca', 'Precio'],
     ['Renault', 28000000],
