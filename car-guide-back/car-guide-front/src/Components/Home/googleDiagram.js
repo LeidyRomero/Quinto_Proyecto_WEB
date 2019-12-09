@@ -13,13 +13,13 @@ export default class GoogleDiagram extends React.Component {
   loader={<div>Loading Chart</div>}
   data={[
     ['Marca', 'Precio'],
-    ['Renault', 28222222],
-    ['Chevrolet', 260155555],
-    ['Mercedez Benz', 257555555],
-    ['BMW', 272333333],
-    ['Audi', 179777777],
-    ['Toyota', 136444444],
-    ['Mazda', 52444444],
+    ['Renault', 28000000],
+    ['Chevrolet', 260000000],
+    ['Mercedez Benz', 250000000],
+    ['BMW', 270000000],
+    ['Audi', 180000000],
+    ['Toyota', 130000000],
+    ['Mazda', 52000000],
   ]}
   options={{
     title: 'Precio promedio de los automóviles',
